@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Hubballi&display=swap');
+	
+	body{
+		background-image:url("fundo.JPG"); /*Para por fundo de imagens*/
+		font-family: "Hubballi"; /*Para mudar a fonte*/
+		height:200vh;
+	}
+    div#central{
+        background-color: #ffffff; /*Para por fundo*/
+        border: 2px solid rgb(0, 0, 0); /*borda: tamnho: modelo: cor */
+        width: 80%; /*Pra delimitar o quando de espaço o se texto ou fundo vai oculpar*/
+        margin-left: 10%;
+        margin-right: 10%;
+		height: 100%;
+    }
+    img#logo{
+        margin-left: auto; /*muda o tamanho do espaço da margem*/
+        margin-right: auto;
+        display: block; /*mexe com o posicionamento, o block nao deixa que outros do mesmo se posiçonem do seu lado*/
+    /*o display inline ele permite que um div termine e outro começe na msm linha, porem perdem propiedade como bordas e etc.*/
+    /*O inline block, se posiciona um do lado do outro em blocos e não perde propiedades*/
+    }
+
+    header#cabe{
+        margin-top: -120px; /*Margem de cima*/
+        background-color: #b8b3b3;   
+        border-top: 1px solid black; /*borda de cima*/
+        border-bottom: 1px solid black; /*borda de baixo*/
+        height: 70px; /*é a altura do elemento a ser formatado*/
+        position: relative;
+        /*width: 30px; é a lagura do elemento a ser formatado*/
+        /*px= pixel; % = porcentagem relacionada ao tamanho do pai; vh = equivalente ao tamanho disponivel na tela*/
+    }
+    nav{
+        position: relative; /*tem relação com o posicionamento do objeto formatado*/
+        /*
+        static = é o padrão do html, nao tem as opições top, bottom, left, right
+        fixed = Independente do rolamento da pagina ele vai continar parado
+        sticky = parecido com o fixed porem ele so vai se tonar fixo quando o topo da tela encostar na imagem
+        relative = ele se move pelo top, bottom, left, right
+        absolute = se move em relaçao a um relative ou a o pai 
+        */
+
+        padding: 10px;
+    }
+    nav#esq{
+		text-align:left;
+        font-weight: bolder;
+        margin-left: 2%;
+        padding: 20px; /*serve para criar um espaço dentro de qualquer borda definida*/
+        margin-bottom: 55px;
+    }
+    nav#dir{
+		text-align:right;
+        font-weight: bolder;
+        padding: 20px;
+        margin-left: 55vh;
+       margin-right:100px;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 30px;
+        color: white;
+        font-size: 20px;
+    }
+    a:hover{
+        color:black;    
+        background-color: white;
+        padding: 8px;  
+
+        border-radius: 8px;
+        font-weight: bolder; /*para medir o peso da fonte, negrito claro e etc*/
+        transition-timing-function: ease-out; /*faz mudar o tipo de transição
+        linear = constante
+        ease = inicio lento meio rapido final lento
+        ease-out = lento apenas no final
+        ease-in =lento apenas no inicio
+        ease-in-out = inicio e final lento
+        */
+        transition-duration: 0.5s; /*duração da transição*/
+    }
